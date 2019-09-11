@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
 
    Circle Cir;
    Cir.setRadius(5);
-   Tri.setColor(GREEN);
+   Rect.setColor(GREEN);
    // Print the area of the object.
    cout << "=============================================" << endl;
    cout << "Circle Area: " << Cir.getArea() << endl;
