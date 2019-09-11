@@ -87,15 +87,15 @@ int main(int argc, char *argv[]) {
    cout << "Rectangle Area: " << Rect.getArea() << endl;
    cout << "Rectangle Color Enumeration: " << Rect.getColor() << endl;
    cout << "=============================================" << endl;
-
-   Triangle Tri;
-   Tri.setBase(5);
-   Tri.setHeight(7);
-   Tri.setColor(RED);
+   
+   Triangle *Tri = new Triangle();
+   Tri->setBase(5);
+   Tri->setHeight(7);
+   Tri->setColor(RED);
    // Print the area of the object.
    cout << "=============================================" << endl;
-   cout << "Triangle Area: " << Tri.getArea() << endl;
-   cout << "Triangle Color Enumeration: " << Tri.getColor() << endl;
+   cout << "Triangle Area: " << Tri->getArea() << endl;
+   cout << "Triangle Color Enumeration: " << Tri->getColor() << endl;
    cout << "=============================================" << endl;
 
    Circle Cir;
