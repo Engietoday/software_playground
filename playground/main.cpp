@@ -1,3 +1,10 @@
+/** @file main.cpp
+ *  @brief Simple example of OOP using C++.
+ * 
+ *  @author Ao Y. Yu 
+ *  @bug No known bugs.
+ */
+
 #define PI 3.141592653589793238462643383279502884
 
 #include <iostream>
@@ -34,16 +41,15 @@ class Shape {
 // Derived class
 class Rectangle: public Shape {
    	public:
-    	float getArea(){ 
-        	return (width * height); 
-      	}
-      	void setWidth(float w){
-      		width = w;
-      	}
-      	void setHeight(float h){
-      		height = h;
-      	}
-
+      float getArea(){ 
+        return (width * height); 
+      }
+    	void setWidth(float w){
+    		width = w;
+    	}
+    	void setHeight(float h){
+    		height = h;
+    	}
     private:
     	float width = 0;
     	float height = 0;
@@ -87,7 +93,7 @@ int main(int argc, char *argv[]) {
    cout << "Rectangle Area: " << Rect.getArea() << endl;
    cout << "Rectangle Color Enumeration: " << Rect.getColor() << endl;
    cout << "=============================================" << endl;
-   
+
    Triangle *Tri = new Triangle();
    Tri->setBase(5);
    Tri->setHeight(7);
@@ -100,7 +106,7 @@ int main(int argc, char *argv[]) {
 
    Circle Cir;
    Cir.setRadius(5);
-   Rect.setColor(GREEN);
+   Cir.setColor(GREEN);
    // Print the area of the object.
    cout << "=============================================" << endl;
    cout << "Circle Area: " << Cir.getArea() << endl;
