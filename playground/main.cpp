@@ -76,6 +76,9 @@ class Circle: public Shape {
 		void setRadius(float r){
 			radius = r;
 		}
+		float* getRadiusAddress(){
+			return &radius;
+		}
 		float getArea() { 
 			return (PI * radius * radius); 
 		}
@@ -110,6 +113,7 @@ int main(int argc, char *argv[]) {
    // Print the area of the object.
    cout << "=============================================" << endl;
    cout << "Circle Area: " << Cir.getArea() << endl;
+   cout << "Memory Address of Circle Radius: " << Cir.getRadiusAddress() << endl;
    cout << "Circle Color Enumeration: " << Cir.getColor() << endl;
    cout << "=============================================" << endl;
 
